@@ -14,6 +14,23 @@ const Nav = styled.div`
       text-decoration: none;
       font-size: 16px;
       margin: 0 20px;
+      position: relative;
+      &:hover:after {
+        width: 100%;
+      }
+      &:after {
+        position: absolute;
+        bottom: -4px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 0%;
+        content: '.';
+        color: transparent;
+        background: rgba(255,255,255,0.8);
+        height: 1px;
+        transition: all .5s;
+      }
     }
   }
   .nav_right {
@@ -49,22 +66,6 @@ const Nav = styled.div`
       }
     }
   }
-`;
-
-const Button = styled.button`
-  position: relative;
-  border: 0;
-  overflow: hidden;
-  outline: none;
-  background: transparent;
-  margin: auto;
-  display: block;
-  padding: 10px 30px;
-  border-radius: 39px;
-  color: #fff;
-  font-weight: 500;
-  font-size: 13px;
-  border: 2px solid #91e4da;
 `;
 
 const Mobilenav = styled.div`
@@ -128,7 +129,10 @@ const Navbar = () => {
               <img src="images/icons/bnb.png" alt="row" />
               $0.11
             </a>
-            <Button>Connect Wallet</Button>
+            <div class="connect-button">
+                <span class="mas">Connect Wallet</span>
+                <button type="button" name="Hover">Connect Wallet</button>
+            </div>
           </div>
         </Nav>
       </nav>

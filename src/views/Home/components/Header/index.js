@@ -10,18 +10,18 @@ const Header = () => {
         <div className="tab_left">
           <ul class="nav nav-pills">
             <li class="nav-item">
-              <a class="nav-link active" data-toggle="pill" href="#home">
-                Keys
+              <a class="nav-link active" data-toggle="pill" href="#tabl1">
+                <div className="bullet"></div>Keys
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-toggle="pill" href="#menu1">
-                Profile & Refferals
+              <a class="nav-link" data-toggle="pill" href="#tabl2">
+                <div className="bullet"></div>Profile & Refferals
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-toggle="pill" href="#menu2">
-                Anti-Whole
+              <a class="nav-link" data-toggle="pill" href="#tabl3">
+                <div className="bullet"></div>Anti-Whole
               </a>
             </li>
           </ul>
@@ -29,18 +29,19 @@ const Header = () => {
         <div className="tab_right">
           <ul class="nav nav-pills">
             <li class="nav-item">
-              <a class="nav-link active" data-toggle="pill" href="#home">
-                This Round
+              <a class="nav-link active" data-toggle="pill" href="#tabr1">
+                <div className="bullet"></div>This Round
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-toggle="pill" href="#menu1">
-                Purchases <span className="count">420</span>
+              <a class="nav-link" data-toggle="pill" href="#tabr2">
+                <div className="bullet"></div>Purchases{" "}
+                <span className="count">420</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" data-toggle="pill" href="#menu2">
-                Last Round
+              <a class="nav-link" data-toggle="pill" href="#tabr3">
+                <div className="bullet"></div>Last Round
               </a>
             </li>
           </ul>
@@ -60,46 +61,44 @@ const Box = styled.div`
   border-radius: 20px;
   overflow: hidden;
   display: flex;
-//   background:url(images/shapes/header.png);
-//   background-repeat:no-repeat;
-.center{
-    position:absolute;
-    width:0px; 
-    background:transparent;
-    height:100%;
+  //   background:url(images/shapes/header.png);
+  //   background-repeat:no-repeat;
+  .center {
+    position: absolute;
+    width: 0px;
+    background: transparent;
+    height: 100%;
     top: 0;
     left: 50%;
-    
+
     transform: translateX(-50%);
-    border-right:1px dashed #B0F3EB;
-    border-left:1px dashed #B0F3EB;
+    border-right: 1px dashed #b0f3eb;
+    border-left: 1px dashed #b0f3eb;
     &:after {
-        position: absolute;
-        content: "";
-        top: 0;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        border-radius: 50%;
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
 
-        width: 20px;
-        height: 20px;
-        background:#A3EDE5;
-       
-      }
-      &:before {
-        position: absolute;
-        content: "";
-        bottom: 0;
-        left: 50%;
-        transform: translate(-50%,50%);
-        border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      background: #a3ede5;
+    }
+    &:before {
+      position: absolute;
+      content: "";
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 50%);
+      border-radius: 50%;
 
-        width: 20px;
-        height: 20px;
-        background:#BFFAF3;
-       
-      }
-}
+      width: 20px;
+      height: 20px;
+      background: #bffaf3;
+    }
+  }
   &:after {
     position: absolute;
     content: "";
@@ -134,47 +133,46 @@ const Box = styled.div`
     z-index: -2;
   }
   @media screen and (max-width: 1000px) {
-    flex-direction:column;
-    .center{
-        border-top: 1px dashed #B0F3EB;
-        border-bottom: 1px dashed #B0F3EB;
-        border-right: 0;
-        border-left: 0;
-        left: 0;
-        top: 50%;
-        width: 100%;
-        height: 0px;
-        transform: translate(0, -50%);
-        &:before{
-            top: 50% !important;
-            left:0 !important;
-            transform: translate(-50%,-50%) !important;
-            background:#92E5DB;
-        }
-        &:after{
-            top: 50% !important;
-            right:0 !important;
-            left:unset !important;
-            transform: translate(50%,-50%) !important;
-            background:#92E5DB;
-
-        }
+    flex-direction: column;
+    .center {
+      border-top: 1px dashed #b0f3eb;
+      border-bottom: 1px dashed #b0f3eb;
+      border-right: 0;
+      border-left: 0;
+      left: 0;
+      top: 50%;
+      width: 100%;
+      height: 0px;
+      transform: translate(0, -50%);
+      &:before {
+        top: 50% !important;
+        left: 0 !important;
+        transform: translate(-50%, -50%) !important;
+        background: #92e5db;
+      }
+      &:after {
+        top: 50% !important;
+        right: 0 !important;
+        left: unset !important;
+        transform: translate(50%, -50%) !important;
+        background: #92e5db;
+      }
     }
   }
 `;
 
 const Tabs = styled.div`
   position: relative;
-  overflow: hidden;
   display: flex;
   justify-content: space-between;
   // background:red;
   margin-bottom: -1px;
- 
-    align-items: center;
-    .tab_right, .tab_left{
-        height: 58px;
-    }
+
+  align-items: center;
+  .tab_right,
+  .tab_left {
+    height: 58px;
+  }
   &:before,
   &:after {
     position: absolute;
@@ -207,26 +205,14 @@ const Tabs = styled.div`
   .nav {
     border-radius: 0;
     align-items: center;
-    height:100%;
+    height: 100%;
     .nav-item:nth-child(2) {
       border-right: 1.5px solid rgba(0, 129, 112, 0.2);
       border-left: 1.5px solid rgba(0, 129, 112, 0.2);
     }
-    .nav-item{
-        height:100%;
-        position:relative;
-        // &:before {
-        //     position: absolute;
-        //     content: "";
-        //     bottom: 0;
-        //     left: 50%;
-        //     transform:translate(-50%,50%);
-        //     width: 30px;
-        //     height: 30px;
-        //     border-radius:50%;
-        //     background: linear-gradient(180deg, rgba(208, 244, 239, 0) 31.67%, #D2F4F0 45.51%);
-        //     z-index:40
-        //   }
+    .nav-item {
+      height: 100%;
+      position: relative;
     }
     .nav-link {
       color: #093a34;
@@ -234,7 +220,7 @@ const Tabs = styled.div`
       font-size: 16px;
       font-weight: normal;
       display: flex;
-      height:100%;
+      height: 100%;
       align-items: center;
       padding: 16px 28px;
       position: relative;
@@ -254,6 +240,43 @@ const Tabs = styled.div`
           );
           opacity: 0.7;
         }
+        .bullet {
+          display: block !important;
+        }
+      }
+
+      .bullet {
+        display: none;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        width: 18px;
+        height: 18px;
+        border-radius: 50%;
+        background: linear-gradient(
+          180deg,
+          rgba(208, 244, 239, 0) 31.67%,
+          #d2f4f0 45.51%
+        );
+        z-index: 40;
+        &:after {
+          position: absolute;
+          content: "";
+          bottom: 0;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 9px;
+          height: 9px;
+          border-radius: 50%;
+          background: radial-gradient(
+            95.45% 95.45% at 50% 4.55%,
+            #21675e 0%,
+            #075147 100%
+          );
+          box-shadow: 0px 4px 4px rgba(33, 103, 94, 0.4);
+          z-index: 40;
+        }
       }
 
       .count {
@@ -267,23 +290,23 @@ const Tabs = styled.div`
     }
   }
   @media screen and (max-width: 1200px) {
-    .nav{
-        .nav-link{
-            font-size: 14px;
-            padding: 16px 20px;
-        }
+    .nav {
+      .nav-link {
+        font-size: 14px;
+        padding: 16px 20px;
+      }
     }
   }
   @media screen and (max-width: 900px) {
-    flex-direction:column;
-    height:auto;
+    flex-direction: column;
+    height: auto;
   }
   @media screen and (max-width: 500px) {
-    .nav{
-        .nav-link{
-            font-size: 13px;
-            padding: 16px 16px;
-        }
+    .nav {
+      .nav-link {
+        font-size: 13px;
+        padding: 16px 16px;
+      }
     }
   }
 `;

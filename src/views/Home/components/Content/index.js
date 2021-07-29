@@ -116,6 +116,12 @@ const Button = styled.button`
   font-size: 14px;
   background: rgba(92, 209, 195, 0.3);
   margin-top: 26px;
+  transition: all 0.25s ease-out;
+  &:hover {
+    position: relative;
+    top: -3px;
+    box-shadow: -6px 14px 12px 2px rgba(90, 90, 90, .12);
+  }
 `;
 
 const Content = () => {

@@ -124,7 +124,6 @@ const Hero = () => {
     <section>
       <HeroBx>
         <Navbar />
-
         <Content>
           <img src="images/marta.png" alt="Logo" />
           <h3>Marta</h3>

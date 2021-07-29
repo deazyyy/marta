@@ -1,0 +1,53 @@
+.left_bx{
+    color: #fff;
+    .header{
+        padding: 10px 0 16px 0;
+        display: flex;
+        justify-content: space-between;
+        h3{
+            color: #fff;
+            margin: 0 0 3px;
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .price{
+            font-size: 14px;
+            font-weight: 400;
+            margin-top: 12px;
+            img{
+                height: 18px;
+                margin: 0 8px;
+                opacity: 0.7;
+            }
+        }
+    }
+   
+}
+
+
+
+.right_bx{
+    color: #fff;
+    .header{
+        h6{
+            font-weight: 400;
+            font-size: 14px;
+            text-align: center;
+            color: rgba(186, 255, 247, 0.6);
+        }
+        h5{
+            text-align: center;
+            color: #CFFFF9;
+            font-size: 17px;
+            margin: 10px 0;
+        }
+        h3{
+            text-align: center;
+            font-size: 36px;
+            font-weight: 800;
+        }
+    }
+}
+
+
+

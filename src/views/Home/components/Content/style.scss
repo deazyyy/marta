@@ -1,0 +1,40 @@
+.col_small {
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .nav {
+    .nav-link {
+      font-size: 14px;
+      padding: 16px 20px;
+    }
+  }
+}
+
+.content_container {
+  @media screen and (max-width: 1100px) {
+    .row {
+      flex-direction: column;
+      .col-md-6 {
+        max-width: unset;
+        width: 100%;
+      }
+    }
+    .row_small {
+      flex-direction: row;
+      .col-md-6 {
+        max-width: 50%;
+        width: 100%;
+      }
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .row_small {
+        flex-direction: column;
+        .col-md-6 {
+          max-width: unset;
+          width: 100%;
+        }
+    }
+  }
+}

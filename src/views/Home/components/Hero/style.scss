@@ -1,0 +1,19 @@
+.container{
+    max-width: 1180px;
+    margin: auto;
+    width: 80vw;
+    @media screen and (max-width: 1250px) {
+        width: 90vw;
+      }
+  }
+
+  
+
+
+//   .content_container{
+//       .col-md-6{
+//         display: flex;
+//         flex-direction: column;
+//         justify-content: space-between;
+//       }
+//   }

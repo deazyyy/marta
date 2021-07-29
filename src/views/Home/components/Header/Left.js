@@ -10,7 +10,7 @@ const Left = () => {
           <div>
             <h3>-$0.4752342</h3>
             <div className="price c-g">
-              0.0001500 <img src="images/icons/bnb2.png" alt="bnb" /> Per key
+              0.0001500 <img src="images/icons/bnb2.svg" alt="bnb" /> Per key
             </div>
           </div>
           <Controls>
@@ -22,7 +22,7 @@ const Left = () => {
             </label>
             <div className="soundOuter">
               <img src="images/icons/sound.png" alt="key" />
-              <img src="images/icons/info.png" alt="key" />
+              <img src="images/icons/info.svg" alt="key" />
             </div>
           </Controls>
         </div>
@@ -31,7 +31,7 @@ const Left = () => {
           <div>
             <span className="mr-4">
               <img
-                src="images/icons/key2.png"
+                src="images/icons/key2.svg"
                 alt="key"
                 style={{ height: "12px", margin: "-3px 5px 0 0px" }}
               />
@@ -80,11 +80,19 @@ const Left = () => {
         </Input>
         <Flex>
           <span>Minimum</span>
-          <div>1</div>
+          <div><img
+                src="images/icons/key2.svg"
+                alt="key"
+                style={{ height: "12px", margin: "-3px 5px 0 0px" }}
+              />1</div>
         </Flex>
         <Flex>
           <span>Wallet BNB Balance</span>
-          <div>0.0934</div>
+          <div><img
+                src="images/icons/bnb2.svg"
+                alt="key"
+                style={{ height: "14px", margin: "-1px 5px 0 0px" }}
+              />0.0934</div>
         </Flex>
         <Button>
           <div>Purchase Keys</div>

@@ -106,7 +106,11 @@ const Right = () => {
                     <div>3245.00000 Keys</div>
                 </div>
                 <div className="rflex">
-                    <h3>7.7601500</h3>
+                    <h3><img
+                src="images/icons/bnb2.svg"
+                alt="key"
+                style={{ height: "18px", margin: "-5px 5px 0 0px" }}
+              />7.7601500</h3>
                     <div>-$0.0001500</div>
                 </div>
             </Flex>
@@ -115,7 +119,11 @@ const Right = () => {
                     <h3>Pirate Vault</h3>
                 </div>
                 <div className="rflex">
-                    <h3>7.7601500</h3>
+                    <h3><img
+                src="images/icons/bnb2.svg"
+                alt="key"
+                style={{ height: "18px", margin: "-5px 5px 0 0px" }}
+              />7.7601500</h3>
                     <div>-$0.0001500</div>
                 </div>
             </Flex> 

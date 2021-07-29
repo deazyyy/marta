@@ -20,6 +20,7 @@ const HeroBx = styled.div`
     right: 0;
     background: rgba(0, 0, 0, 0) url("images/vector.png") no-repeat scroll center bottom;
     mix-blend-mode: overlay;
+    background-repeat: repeat-x;
     z-index: -1;
   }
 

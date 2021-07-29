@@ -18,12 +18,9 @@ const HeroBx = styled.div`
     height: 100%;
     top: 0;
     right: 0;
-    background: url(images/vector.png);
+    background: rgba(0, 0, 0, 0) url("images/vector.png") no-repeat scroll center bottom;
     mix-blend-mode: overlay;
     z-index: -1;
-    background-repeat-y: no-repeat;
-    // background-size: contain;
-    background-position: bottom;
   }
 
   .pianoimg {
